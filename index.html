@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <a class="navbar-brand d-flex align-items-center ms-4" href="#">
+      <i class="fa-brands fa-instagram mr-1"></i>
+      <span class="ms-2">Instagram</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav align-items-center me-4">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-success" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              Create new Post
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Caption
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Publish</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-gear"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Log out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+        type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+          class="fa-solid fa-border-all"></i></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+        type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
+          class="fa-regular fa-square"></i></button>
+    </li>
+  </ul>
+  <div class="tab-content justify-content-center p-3" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+      tabindex="0">
+      <div class="d-flex flex-column gap-4">
+        <div class="d-flex gap-4 justify-content-center">
+          <div class="img-container">
+            <img class="img"
+              src="https://dogtime.com/wp-content/uploads/sites/12/2011/01/GettyImages-178920540-e1689348859523.jpg?w=1024"
+              class="card-img-top" alt="...">
+          </div>
+          <div class="img-container">
+            <img class="img"
+              src="https://www.quickanddirtytips.com/wp-content/uploads/2022/05/ezgif.com-gif-maker-3.jpg"
+              class="card-img-top" alt="...">
+          </div>
+          <div class="img-container">
+            <img class="img" src="https://lp-cms-production.imgix.net/2021-06/shutterstockRF_662032261.jpg"
+              class="card-img-top" alt="...">
+          </div>
+        </div>
+        <div class="d-flex gap-4 justify-content-center">
+          <div class="img-container">
+            <img class="img"
+              src="https://static1.squarespace.com/static/656f4e4dababbd7c042c4946/657236350931ee4538eea52c/65baf15103d8ad2826032a8a/1707422532886/how-to-stop-being-a-people-pleaser-1_1.jpg?format=1500w"
+              class="card-img-top" alt="...">
+          </div>
+          <div class="img-container">
+            <img class="img"
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/07/a8/2c/caption.jpg?w=1400&h=1400&s=1"
+              class="card-img-top" alt="...">
+          </div>
+          <div class="img-container">
+            <img class="img" src="https://pbs.twimg.com/media/FRyCGfXX0AM-ODX.jpg:large" class="card-img-top" alt="...">
+          </div>
+        </div>
+        <div class="d-flex gap-4 justify-content-center">
+          <div class="img-container">
+            <img class="img" src="https://www.triptomax.com/wp-content/uploads/2018/05/shutterstock_193994486.jpg"
+              class="card-img-top" alt="...">
+          </div>
+          <div class="img-container">
+            <img class="img"
+              src="https://imageio.forbes.com/blogs-images/forbestechcouncil/files/2019/01/canva-photo-editor-8-7.png?height=640&width=640&fit=bounds"
+              class="card-img-top" alt="...">
+          </div>
+          <div class="img-container">
+            <img class="img" src="https://www.questionpro.com/blog/wp-content/uploads/2018/08/Encuestas-estudiantes.jpg"
+              class="card-img-top" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+      <div class="d-flex flex-column gap-4 align-items-center">
+        <div class="card" style="width: 30rem;">
+          <h3>My Crazy dog Spark!</h3>
+          <p>08/26</p>
+          <img
+            src="https://dogtime.com/wp-content/uploads/sites/12/2011/01/GettyImages-178920540-e1689348859523.jpg?w=1024"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <p><b>204 Likes</b></p>
+            <p class="card-text">This is an example of a very good photo that you can post on Instagram</p>
+          </div>
+        </div>
+        <div class="card" style="width: 30rem;">
+          <h3>The greatness of Croatia</h3>
+          <img src="https://lp-cms-production.imgix.net/2021-06/shutterstockRF_662032261.jpg" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <p><b>26985 Likes</b></p>
+            <p class="card-text">This is an example of a very good photo that you can post on Instagram</p>
+          </div>
+        </div>
+        <div class="card" style="width: 30rem;">
+          <h3>Amazing GOAL by Cristiano!</h3>
+          <img src="https://pbs.twimg.com/media/FRyCGfXX0AM-ODX.jpg:large" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p><b>204 Likes</b></p>
+            <p class="card-text">This is an example of a very good photo that you can post on Instagram</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+</html>
