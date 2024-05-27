@@ -36,9 +36,18 @@
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                  <div class="modal-body">
+                  <div class="form-floating col-md-12 p-2">
+                        <p><strong>Caption:</strong></p>
+                            <textarea class="form-control" id="floatingTextarea" placeholder="Add the Caption of your picture here"></textarea>
+                            <label for="floatingTextarea"></label>
+                            <div class="p-3 d-flex">
+                              <i class="fa-solid fa-camera fa-lg"></i>
+                              <i class="fa-sharp fa-solid fa-location-dot fa-lg"></i>
+                            </div>
+                    </div>
+                  <!-- <div class="modal-body">
                     Caption
-                  </div>
+                  </div> -->
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Publish</button>
